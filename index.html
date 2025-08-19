@@ -1,0 +1,281 @@
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Norton Help</title>
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-4 sm:px-6 md:px-10 py-4 max-w-[1200px] mx-auto relative">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <img alt="Yellow checkmark icon" class="w-6 h-6"
+        src="cfce1bba-e367-4fad-f87f-a25a89cef7e5.jpg" />
+      <span class="font-bold text-xl select-none">norton</span>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-800 items-center">
+      <a class="hover:text-yellow-500 transition" href="#">Products</a>
+      <a class="hover:text-yellow-500 transition" href="#">Blog</a>
+      <a class="relative font-semibold text-yellow-500 after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-yellow-500"
+        href="#">Support</a>
+      <a class="hover:text-yellow-500 transition" href="#">Trials</a>
+    </nav>
+
+    <!-- Right side buttons -->
+    <div class="flex items-center space-x-3">
+      <!-- Desktop Call Button -->
+      <a onclick="callNow()"
+        class="hidden sm:flex items-center bg-yellow-400 px-4 py-2 rounded-full text-xs font-semibold hover:bg-yellow-300 transition">
+        <i class="fas fa-phone-alt mr-2"></i> Call Now
+      </a>
+
+      <!-- Mobile Call Icon -->
+      <a onclick="callNow()"
+        class="sm:hidden flex items-center justify-center bg-yellow-400 w-9 h-9 rounded-full hover:bg-yellow-300 transition">
+        <i class="fas fa-phone-alt text-sm"></i>
+      </a>
+
+      <!-- Mobile Hamburger -->
+      <button id="menuToggle"
+        class="sm:hidden flex items-center justify-center w-9 h-9 rounded-full border border-gray-300 hover:bg-gray-100 transition">
+        <i class="fas fa-bars text-lg"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden absolute top-16 left-0 w-full bg-white shadow-lg border-t border-gray-200 z-50">
+      <nav class="flex flex-col space-y-4 px-6 py-6 text-gray-800 text-sm">
+        <a href="#" class="hover:text-yellow-500">Products</a>
+        <a href="#" class="hover:text-yellow-500">Blog</a>
+        <a href="#" class="hover:text-yellow-500 font-semibold text-yellow-500">Support</a>
+        <a href="#" class="hover:text-yellow-500">Trials</a>
+        <a onclick="callNow()"
+          class="flex items-center bg-yellow-400 px-4 py-2 rounded-full text-xs font-semibold hover:bg-yellow-300 transition w-max">
+          <i class="fas fa-phone-alt mr-2"></i> Call Now
+        </a>
+        <button
+          class="bg-black text-white px-4 py-2 rounded-full text-xs font-semibold hover:bg-gray-800 transition w-max">
+          Sign Up
+        </button>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+  <!-- Hero Section -->
+<section
+  class="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-10 mt-4 rounded-lg overflow-hidden relative"
+>
+  <div
+    class="flex flex-col md:flex-row items-center bg-gradient-to-r from-white to-gray-100 rounded-lg shadow-lg overflow-hidden"
+  >
+    <!-- Left Side Content -->
+    <div class="flex-1 px-6 py-10 md:py-16 text-center md:text-left">
+      <h1 class="font-extrabold text-3xl md:text-5xl leading-tight mb-4">
+        What can we help you with?
+      </h1>
+
+      <!-- Responsive Call Now Button -->
+      <div class="mt-6">
+        <a
+          onclick="callNow()"
+          class="flex md:inline-flex items-center justify-center bg-yellow-400 text-black 
+                 px-4 py-2 text-sm md:px-6 md:py-4 md:text-lg 
+                 rounded-full font-semibold md:font-bold shadow-md 
+                 hover:bg-yellow-300 transition w-full md:w-auto"
+        >
+          <i class="fas fa-phone-alt mr-2 md:mr-3"></i>
+          Call Now: <span class="ml-1 md:ml-2">+1(866) 240-6703</span>
+        </a>
+      </div>
+
+      <!-- Search Form -->
+      <form class="mt-8 max-w-lg mx-auto md:mx-0">
+        <label class="sr-only" for="search">Search</label>
+        <input
+          class="w-full border border-gray-300 rounded-full py-2 md:py-3 px-4 md:px-5 
+                 text-sm placeholder:text-gray-500 
+                 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 shadow-sm"
+          id="search"
+          placeholder="Type your questions or issue here..."
+          type="search"
+        />
+      </form>
+    </div>
+
+    <!-- Right Side Image -->
+    <div class="flex-1">
+      <img
+        alt="Woman support agent smiling"
+        class="w-full h-full object-cover"
+        src="0ead8542-1a5a-44bc-7cf8-246bff59f82b.jpg"
+      />
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- Upgrade Section -->
+  <section
+    class="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-10 mt-6 bg-gray-50 rounded-lg shadow-md flex flex-col sm:flex-row items-center gap-4 py-5 px-5">
+    <img alt="Upgrade illustration" class="rounded-lg w-[120px] h-[80px] object-cover flex-shrink-0"
+      src="a27353b0-e886-481e-b5e1-a4029ccb5bb5.jpg" />
+    <div class="flex-1 text-sm text-gray-700 leading-tight">
+      <p class="font-semibold text-gray-900 mb-1">Upgrade for Free</p>
+      <p class="mb-1">Cybercrime is evolving. So is your protection.</p>
+      <p class="text-xs text-gray-600">
+        *Offer for existing members for the remainder of your subscription.
+        Terms apply.
+      </p>
+    </div>
+    <button onclick="callNow()"
+      class="bg-yellow-400 text-black font-semibold text-xs rounded-full px-6 py-2 hover:bg-yellow-300 transition">
+      Upgrade Now
+    </button>
+  </section>
+
+  <!-- Help Section -->
+  <section class="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-10 mt-12 text-center">
+    <h2 class="font-bold text-2xl mb-8">How can we assist you?</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+      <div
+        class="bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-4 cursor-pointer hover:shadow-lg transition">
+        <i class="fas fa-file-download text-2xl mb-2 text-yellow-500"></i>
+        <span class="text-xs font-semibold">Download & Install</span>
+      </div>
+      <div
+        class="bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-4 cursor-pointer hover:shadow-lg transition">
+        <i class="fas fa-sync-alt text-2xl mb-2 text-yellow-500"></i>
+        <span class="text-xs font-semibold">Buy & Renew</span>
+      </div>
+      <div
+        class="bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-4 cursor-pointer hover:shadow-lg transition">
+        <i class="far fa-user-circle text-2xl mb-2 text-yellow-500"></i>
+        <span class="text-xs font-semibold">Account Help</span>
+      </div>
+      <div
+        class="bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-4 cursor-pointer hover:shadow-lg transition">
+        <i class="fas fa-lock text-2xl mb-2 text-yellow-500"></i>
+        <span class="text-xs font-semibold">VPN Support</span>
+      </div>
+      <div
+        class="bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-4 cursor-pointer hover:shadow-lg transition">
+        <i class="fas fa-users text-2xl mb-2 text-yellow-500"></i>
+        <span class="text-xs font-semibold">Family Safety</span>
+      </div>
+      <div
+        class="bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-4 cursor-pointer hover:shadow-lg transition">
+        <i class="fas fa-desktop text-2xl mb-2 text-yellow-500"></i>
+        <span class="text-xs font-semibold">Business Support</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section
+    class="max-w-[1200px] mx-auto mt-12 px-6 sm:px-10 py-10 text-center bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-extrabold mb-4">Need urgent help?</h2>
+    <p class="text-sm mb-6">
+      Call us directly or create an account to access personalized support.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a onclick="callNow()"
+        class="bg-black cursor-pointer text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-gray-800 transition">
+        <i class="fas fa-phone-alt mr-2"></i> Call Support
+      </a>
+      <button onclick="callNow()"
+        class="bg-white text-black px-6 py-3 rounded-full text-sm font-semibold hover:bg-gray-100 transition">
+        Sign Up for Free
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-50 text-gray-700 text-xs mt-16 border-t border-gray-200">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-10 py-6 grid grid-cols-2 sm:grid-cols-4 gap-6">
+      <div>
+        <p class="font-semibold mb-2">Products</p>
+        <ul class="space-y-1">
+          <li>Norton Antivirus Plus</li>
+          <li>Norton 360 Standard</li>
+          <li>Norton VPN</li>
+          <li>Norton Family</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold mb-2">Support</p>
+        <ul class="space-y-1">
+          <li>Contact Us</li>
+          <li>Help Center</li>
+          <li>Community</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold mb-2">Company</p>
+        <ul class="space-y-1">
+          <li>About Norton</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold mb-2">Legal</p>
+        <ul class="space-y-1">
+          <li>Privacy Policy</li>
+          <li>Cookies</li>
+          <li>License Agreements</li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="flex flex-col sm:flex-row justify-between items-center px-6 py-4 border-t border-gray-200 text-gray-600">
+      <p>© 2025 Gen Digital Inc. All rights reserved.</p>
+      <div class="flex space-x-4 mt-3 sm:mt-0 text-lg">
+        <a href="#" class="hover:text-black"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-black"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-black"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+
+  function callNow() {
+    // Mobile devices will trigger call
+    window.location.href = 'tel:+18662406703';
+  }
+
+
+
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+</script>
+
+
+
+</html>
